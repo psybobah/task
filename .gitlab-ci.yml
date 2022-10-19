@@ -1,0 +1,15 @@
+stages:
+  - build
+  - test
+
+cache:
+  paths:
+    - build
+
+build:
+  stage: build
+  script: cmake -S . -B build && cmake --build build
+
+test:
+  stage: test
+  script: cd build && ctest
