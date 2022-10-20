@@ -35,10 +35,6 @@ int main(void) {
 
     std::cout << "Generated vector with " << vec.size() << " elements\n\n";
 
-    //for (const auto & item : vec) {
-    //    item->print();
-    //}
-
     // Vector 2 according to task
     vector <shared_ptr<XYCircle>> vec2;
 
@@ -54,7 +50,7 @@ int main(void) {
         }
     }
 
-    std::cout << "Sorted list of vector with " << vec2.size() << " elements\n\n";
+    std::cout << "Sorted list of circles with " << vec2.size() << " elements\n\n";
 
     std::sort(vec2.begin(), vec2.end(),
               [](const shared_ptr<XYCircle> & a, const shared_ptr<XYCircle> & b)
