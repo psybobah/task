@@ -12,7 +12,6 @@ Build
 sudo apt install g++
 sudo apt-get install cmake
 sudo apt-get install libgtest-dev
-sudo apt-get install libgmock-dev
 ```
 
 - Build project
@@ -28,7 +27,7 @@ Run unit tests using following command:
 cd build && ctest -V && cd -
 ```
 
-Run task usng command:
+Run a task using command:
 ```
 build/task
 ```
