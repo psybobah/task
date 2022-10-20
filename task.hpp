@@ -79,7 +79,7 @@ class ZHelix : public GeomEntity {
     double radius;
     double step;
 public:
-    ZHelix(double _x, double _y, double _z, double _radius, double _step) : radius(_radius), step(_step), x(_x), y(_y), z(_y) {
+    ZHelix(double _x, double _y, double _z, double _radius, double _step) : radius(_radius), step(_step), x(_x), y(_y), z(_z) {
         if (_radius < 0) {
             throw std::invalid_argument("Radius must be positive");
         }        
